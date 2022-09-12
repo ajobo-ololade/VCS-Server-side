@@ -1,7 +1,12 @@
 const mongoose = require('mongoose')
 const bcrypt = require('bcryptjs')
 const userSchema = mongoose.Schema({
-    fullName:{
+    fistname:{
+        require:true,
+        type:String,
+
+    },
+    lastname:{
         require:true,
         type:String,
 
@@ -12,6 +17,16 @@ const userSchema = mongoose.Schema({
 
     },
     matricNo:{
+        require:true,
+        type:String,
+
+    },
+    gender:{
+        require:true,
+        type:String,
+
+    },
+    password:{
         require:true,
         type:String,
 
