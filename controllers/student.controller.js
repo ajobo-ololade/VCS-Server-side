@@ -21,6 +21,9 @@ const handlebarOptions = {
     },
     viewPath: path.resolve('./views/'),
 };
+const display = ((req,res)=>{
+    res.send(`I'm Actively working`)
+})
 
 const displaySignup=((req,res)=>{
     
@@ -92,4 +95,4 @@ const displaySignin = ((req,res)=>{
     
     
 })
-module.exports={displaySignup,displaySignin}
+module.exports={displaySignup,displaySignin,display}
