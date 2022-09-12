@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "vcs-servergit",
+    "name": "vcs-server",
     "builds": [
        { "src": "index.js", "use": "@vercel/node" }
     ],
