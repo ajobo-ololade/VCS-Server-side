@@ -84,7 +84,7 @@ const displaySignup=async function (req,res){
                             matricNo: num,
                           
                            
-                        },
+                        },catch (err){console.log(err)}
                     };
                     // trigger the sending of the E-mail
                     transporter.sendMail(mailOptions, function (error, result) {
