@@ -34,7 +34,7 @@ const display = ((req,res)=>{
     res.send(`I'm Actively working`)
 })
 
-const displaySignup=((req,res)=>{
+const displaySignup=async function (req,res){
     
     studentModel.findOne({email:req.body.email},(err,result)=>{
         if (err) {
@@ -82,7 +82,7 @@ const displaySignup=((req,res)=>{
                             company: 'Grad School',
                             email: email,
                             matricNo: num,
-                            password:password
+                          
                            
                         },
                     };
@@ -109,7 +109,7 @@ const displaySignup=((req,res)=>{
             
         }
     })
-})
+}
 const displaySignin = ((req,res)=>{
     const matricNo = req.body.matricNo
     const password = req.body.password
